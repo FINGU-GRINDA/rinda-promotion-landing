@@ -1,0 +1,236 @@
+@import "tailwindcss";
+
+/* ===== GRINDA 수출자동화 - UX 최적화 디자인 시스템 ===== */
+@theme {
+  /* Primary - 민트/청록 */
+  --color-primary: #00D4AA;
+  --color-primary-dark: #00B894;
+  --color-primary-light: #E8FFF9;
+
+  /* Secondary - 네이비/다크 */
+  --color-dark: #1A1F36;
+  --color-dark-light: #2D3352;
+  --color-dark-lighter: #3D4466;
+
+  /* Alert - 빨강 */
+  --color-alert: #FF4757;
+  --color-alert-light: #FFE8EA;
+
+  /* Neutral */
+  --color-n-black: #0A0A0A;
+  --color-n-white: #FFFFFF;
+  --color-n-100: #F8F9FA;
+  --color-n-200: #E9ECEF;
+  --color-n-300: #DEE2E6;
+  --color-n-400: #ADB5BD;
+  --color-n-500: #6C757D;
+  --color-n-600: #495057;
+  --color-n-700: #343A40;
+}
+
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+  /* Reset to standard base for predictable rem scaling */
+}
+
+body {
+  background: #0A0A0A;
+  color: #FFFFFF;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Noto Sans KR", sans-serif;
+  line-height: 1.6;
+  /* Optimal reading line-height */
+  letter-spacing: -0.025em;
+  /* Slightly tighter for modern sans-serif */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-break: keep-all;
+  /* Korean typography best practice */
+}
+
+/* ===== Typography ===== */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5em;
+  /* Default heading spacing */
+}
+
+p {
+  margin-bottom: 1em;
+  /* Default paragraph spacing */
+  color: #DEE2E6;
+  /* Slightly softer white for body text (n-300) */
+}
+
+/* ===== Container - 넉넉한 패딩 ===== */
+.container-default {
+  width: 100%;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  /* Increased mobile padding */
+  padding-right: 24px;
+}
+
+/* ===== Premium Utilities ===== */
+.glass-panel {
+  background: rgba(26, 31, 54, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #FFFFFF 0%, #ADB5BD 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-primary {
+  background: linear-gradient(135deg, #00D4AA 0%, #00B894 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #00D4AA 0%, #00B894 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Background Effects ===== */
+.bg-aurora {
+  background:
+    radial-gradient(circle at 0% 0%, rgba(0, 212, 170, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 100% 100%, rgba(26, 31, 54, 0.5) 0%, transparent 50%);
+}
+
+.bg-grid-pattern {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ===== Animations ===== */
+@keyframes pulse-dot {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 212, 170, 0.4);
+  }
+
+  50% {
+    opacity: 0.8;
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 4px rgba(0, 212, 170, 0);
+  }
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.pulse-dot {
+  animation: pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* ===== Scrollbar ===== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2D3352;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3D4466;
+}
+
+/* ===== Focus ===== */
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid #00D4AA;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+::selection {
+  background: rgba(0, 212, 170, 0.2);
+  color: #FFFFFF;
+}
