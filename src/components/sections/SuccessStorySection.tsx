@@ -112,7 +112,7 @@ export default function SuccessStorySection() {
           <p className="text-white font-bold text-lg leading-relaxed mb-3">
             <span className="text-primary text-3xl font-black block mb-2">당신의 차례입니다</span>
             지금 신청하고<br />
-            3주 후 첫 수출 계약을 경험하세요
+            3주 만에 수출 준비를 완료하세요
           </p>
         </div>
 

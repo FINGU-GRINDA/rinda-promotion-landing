@@ -10,7 +10,7 @@ export default function FinalCTASection() {
 
         {/* Main Copy */}
         <p className="text-n-black text-lg mb-6 font-semibold">
-          10개 자리가 마감되면, 1기 혜택은 영원히 사라집니다
+          슈퍼 얼리버드 10개 자리가 마감되면, 1기 혜택은 영원히 사라집니다
         </p>
         <h2 className="text-[2.25rem] font-extrabold text-n-black leading-tight mb-8">
           <span className="underline decoration-n-black/30 underline-offset-8">지금 신청</span>하고
@@ -20,7 +20,7 @@ export default function FinalCTASection() {
         <p className="text-n-black text-lg mb-10 leading-relaxed font-medium">
           3주 후, 당신은
           <br />
-          <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">첫 해외 바이어</span>와 미팅하고 있을 겁니다
+          <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">첫 바이어 컨택을 시작</span>하고 있을 겁니다
         </p>
 
         {/* Price Card - Compact */}

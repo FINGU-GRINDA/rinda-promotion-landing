@@ -90,14 +90,14 @@ export default function PricingSection() {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-alert font-bold text-lg mb-4 tracking-wide">⚡ 1기 모집 마감 임박</p>
+          <p className="text-alert font-bold text-lg mb-4 tracking-wide">⚡ 슈퍼 얼리버드 모집 중</p>
           <h2 className="text-[1.875rem] font-extrabold text-white leading-tight mb-6">
             <span className="text-alert">20.5만원</span>으로<br />
             <span className="text-gradient-primary">글로벌 시장 진출</span>
           </h2>
           <p className="text-n-200 text-base leading-relaxed">
             1기는 <span className="text-white font-bold">가장 많은 혜택</span>을 받습니다<br />
-            <span className="text-primary font-semibold">단 10개 기업, 잔여 3자리</span>
+            <span className="text-primary font-semibold">🎁 슈퍼 얼리버드 단 10개 기업만</span>
           </p>
         </div>
 
@@ -211,8 +211,8 @@ export default function PricingSection() {
             <div className="bg-alert/15 border border-alert/30 rounded-2xl p-5 mb-7 flex items-center gap-4">
               <span className="w-4 h-4 bg-alert rounded-full pulse-dot shrink-0" />
               <div>
-                <p className="text-alert font-bold text-lg">잔여 3자리</p>
-                <p className="text-n-400 text-base">선착순 10명 중 7명 신청 완료</p>
+                <p className="text-alert font-bold text-lg">🎁 슈퍼 얼리버드</p>
+                <p className="text-n-400 text-base">첫 10개 기업에게만 주어지는 특별가</p>
               </div>
             </div>
 

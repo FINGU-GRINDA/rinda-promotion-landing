@@ -95,7 +95,7 @@ export default function SuccessMetricsSection() {
           </div>
           <p className="text-n-200 text-sm leading-relaxed">
             2기부터는 정가 적용 + 1기 전용 혜택 종료<br />
-            <span className="text-white font-semibold">현재 신청자 7명, 잔여 3자리</span>
+            <span className="text-white font-semibold">🎁 슈퍼 얼리버드 단 10개 기업만</span>
           </p>
         </div>
 
