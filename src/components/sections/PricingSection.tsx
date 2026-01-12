@@ -107,6 +107,80 @@ export default function PricingSection() {
           <CountdownTimer />
         </div>
 
+        {/* Price Comparison Table */}
+        <div className="bg-dark-lighter/50 border border-white/10 rounded-2xl p-6 mb-10">
+          <h3 className="text-white font-bold text-lg mb-6 text-center">가격 비교</h3>
+          <div className="space-y-4">
+            {/* Row 1 */}
+            <div className="flex items-center justify-between pb-4 border-b border-white/10">
+              <div>
+                <p className="text-n-200 text-base">박람회 참가비</p>
+                <p className="text-alert text-sm">300만원</p>
+              </div>
+              <svg className="w-6 h-6 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+
+            {/* Row 2 */}
+            <div className="flex items-center justify-between pb-4 border-b border-white/10">
+              <div>
+                <p className="text-n-200 text-base">무역 컨설팅 (1회)</p>
+                <p className="text-alert text-sm">150만원</p>
+              </div>
+              <svg className="w-6 h-6 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+
+            {/* Row 3 */}
+            <div className="flex items-center justify-between pb-4 border-b border-white/10">
+              <div>
+                <p className="text-n-200 text-base">바이어 DB 구매</p>
+                <p className="text-alert text-sm">50만원</p>
+              </div>
+              <svg className="w-6 h-6 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+
+            {/* Row 4 */}
+            <div className="flex items-center justify-between pb-4 border-b border-white/10">
+              <div>
+                <p className="text-n-200 text-base">콜드메일 작성 외주</p>
+                <p className="text-alert text-sm">30만원</p>
+              </div>
+              <svg className="w-6 h-6 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </div>
+
+            {/* Total */}
+            <div className="bg-alert/10 border border-alert/30 rounded-xl p-4 mt-4">
+              <div className="flex items-center justify-between">
+                <p className="text-white font-bold text-lg">합계</p>
+                <p className="text-alert font-black text-2xl">530만원</p>
+              </div>
+            </div>
+
+            {/* Arrow */}
+            <div className="text-center py-3">
+              <svg className="w-8 h-8 text-primary mx-auto animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+              </svg>
+            </div>
+
+            {/* Rinda Price */}
+            <div className="bg-primary/10 border-2 border-primary/50 rounded-xl p-5">
+              <div className="flex items-center justify-between mb-2">
+                <p className="text-white font-bold text-lg">Rinda 프로그램</p>
+                <p className="text-primary font-black text-3xl">20.5만원</p>
+              </div>
+              <p className="text-primary text-sm font-bold text-right">96% 절약 🎉</p>
+            </div>
+          </div>
+        </div>
+
         {/* Pricing Card */}
         <div className="bg-dark-light rounded-3xl overflow-hidden border-2 border-primary shadow-[0_0_40px_rgba(0,212,170,0.15)]">
 

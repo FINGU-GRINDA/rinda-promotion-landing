@@ -1,10 +1,12 @@
 import HeroSection from "@/components/sections/HeroSection";
+import SuccessMetricsSection from "@/components/sections/SuccessMetricsSection";
 import TargetSection from "@/components/sections/TargetSection";
 import ProblemSection from "@/components/sections/ProblemSection";
 import SolutionSection from "@/components/sections/SolutionSection";
 import SuccessStorySection from "@/components/sections/SuccessStorySection";
 import CurriculumSection from "@/components/sections/CurriculumSection";
 import InstructorSection from "@/components/sections/InstructorSection";
+import BonusSection from "@/components/sections/BonusSection";
 import PricingSection from "@/components/sections/PricingSection";
 import FAQSection from "@/components/sections/FAQSection";
 import FinalCTASection from "@/components/sections/FinalCTASection";
@@ -16,6 +18,9 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Hero Section */}
       <HeroSection />
+
+      {/* Success Metrics Section - NEW */}
+      <SuccessMetricsSection />
 
       {/* Target Persona Section */}
       <TargetSection />
@@ -34,6 +39,9 @@ export default function Home() {
 
       {/* Instructor Section */}
       <InstructorSection />
+
+      {/* Bonus Section - NEW */}
+      <BonusSection />
 
       {/* Pricing Section */}
       <PricingSection />

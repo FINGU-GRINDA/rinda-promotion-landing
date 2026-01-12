@@ -2,16 +2,22 @@
 
 const problems = [
   {
-    title: "박람회에 수천만원 투자했지만",
-    desc: "기대한 성과가 나오지 않으셨나요?"
+    title: "박람회 부스 비용 3,000만원",
+    desc: "3일간 100명 만남 → 실제 계약 0건",
+    cost: "3,000만원",
+    result: "계약 0건"
   },
   {
-    title: "콜드메일 100통 보냈는데",
-    desc: "답장이 오지 않아 답답하셨나요?"
+    title: "콜드메일 100통 발송",
+    desc: "응답률 0% → 시간과 비용만 낭비",
+    cost: "시간 낭비",
+    result: "응답 0건"
   },
   {
-    title: "수출 강의를 들었지만",
-    desc: "실제 실행은 막막하셨나요?"
+    title: "온라인 강의 수강료 150만원",
+    desc: "이론은 알겠는데... 실행은 여전히 막막",
+    cost: "150만원",
+    result: "실행 불가"
   },
 ];
 
@@ -44,20 +50,37 @@ export default function ProblemSection() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="bg-dark/80 border border-alert/20 p-5 rounded-xl flex items-start gap-4 hover:bg-dark transition-colors relative overflow-hidden group shadow-lg"
+              className="bg-dark/80 border border-alert/20 rounded-2xl overflow-hidden hover:border-alert/40 transition-all group shadow-lg"
             >
-              <div className="absolute right-0 top-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
-                <svg className="w-16 h-16 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M6 18L18 6M6 6l12 12" />
-                </svg>
+              {/* Header with Cost */}
+              <div className="bg-alert/10 border-b border-alert/20 px-5 py-3 flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full bg-alert/20 flex items-center justify-center border border-alert/30 text-alert font-bold text-sm shadow-[0_0_10px_rgba(255,71,87,0.2)]">
+                    {index + 1}
+                  </div>
+                  <span className="text-alert font-bold text-sm">기존 방법</span>
+                </div>
+                <span className="text-alert/80 font-bold text-sm">{problem.cost}</span>
               </div>
 
-              <div className="w-10 h-10 rounded-full bg-alert/20 flex items-center justify-center shrink-0 mt-0.5 border border-alert/30 text-alert font-bold text-base shadow-[0_0_10px_rgba(255,71,87,0.2)]">
-                {index + 1}
-              </div>
-              <div className="relative z-10">
-                <h3 className="text-white text-xl font-bold mb-1 leading-tight">{problem.title}</h3>
-                <p className="text-n-300 text-base leading-relaxed">{problem.desc}</p>
+              {/* Content */}
+              <div className="p-5 relative">
+                <div className="absolute right-3 top-3 opacity-5 group-hover:opacity-10 transition-opacity">
+                  <svg className="w-16 h-16 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </div>
+
+                <h3 className="text-white text-lg font-bold mb-2 leading-tight relative z-10">{problem.title}</h3>
+                <p className="text-n-300 text-base leading-relaxed mb-3 relative z-10">{problem.desc}</p>
+
+                {/* Result Badge */}
+                <div className="inline-flex items-center gap-2 bg-alert/10 border border-alert/20 px-3 py-1.5 rounded-lg relative z-10">
+                  <svg className="w-4 h-4 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                  <span className="text-alert font-bold text-sm">{problem.result}</span>
+                </div>
               </div>
             </div>
           ))}

@@ -58,8 +58,57 @@ export default function SuccessStorySection() {
           </div>
         </div>
 
+        {/* Additional Testimonials */}
+        <div className="grid gap-6 mb-12">
+          {/* Testimonial 2 */}
+          <div className="glass-panel-light border-primary/20 rounded-xl p-6">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary/30 to-primary-dark/30 rounded-full flex items-center justify-center">
+                <span className="text-white text-lg font-bold">박</span>
+              </div>
+              <div>
+                <p className="text-white font-bold text-base">박지현 대표</p>
+                <p className="text-n-400 text-sm">식품 제조업</p>
+              </div>
+              <div className="ml-auto flex text-primary">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <p className="text-n-200 text-base leading-relaxed">
+              "2주차에 <span className="text-primary font-bold">호주 바이어에게 첫 답장</span>을 받았을 때 정말 믿을 수 없었어요. 3주차에는 <span className="text-white font-semibold">샘플 발송까지 완료</span>했습니다!"
+            </p>
+          </div>
+
+          {/* Testimonial 3 */}
+          <div className="glass-panel-light border-primary/20 rounded-xl p-6">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary/30 to-primary-dark/30 rounded-full flex items-center justify-center">
+                <span className="text-white text-lg font-bold">최</span>
+              </div>
+              <div>
+                <p className="text-white font-bold text-base">최민수 대표</p>
+                <p className="text-n-400 text-sm">패션 액세서리</p>
+              </div>
+              <div className="ml-auto flex text-primary">
+                {[...Array(5)].map((_, i) => (
+                  <svg key={i} className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                  </svg>
+                ))}
+              </div>
+            </div>
+            <p className="text-n-200 text-base leading-relaxed">
+              "영어를 못해서 포기했던 수출을 <span className="text-primary font-bold">AI가 도와줘서</span> <span className="text-white font-semibold">일본 바이어 3곳과 상담 중</span>입니다. 템플릿 덕분에 이메일 작성이 너무 쉬워요!"
+            </p>
+          </div>
+        </div>
+
         {/* Result Highlight Box */}
-        <div className="glass-panel-light border-primary/30 rounded-2xl px-6 py-10 text-center bg-primary/5 mt-12">
+        <div className="glass-panel-light border-primary/30 rounded-2xl px-6 py-10 text-center bg-primary/5">
           <p className="text-white font-bold text-lg leading-relaxed">
             GRINDA 수강생 평균<br />
             콜드메일 응답률 <span className="text-primary text-4xl font-black mx-1 inline-block transform -translate-y-1">3배</span> 증가
