@@ -10,17 +10,17 @@ export default function FinalCTASection() {
 
         {/* Main Copy */}
         <p className="text-n-black text-lg mb-6 font-semibold">
-          망설이는 동안, 경쟁자는 앞서갑니다
+          10개 자리가 마감되면, 1기 혜택은 영원히 사라집니다
         </p>
         <h2 className="text-[2.25rem] font-extrabold text-n-black leading-tight mb-8">
-          지금 시작하면
+          <span className="underline decoration-n-black/30 underline-offset-8">지금 신청</span>하고
           <br />
-          <span className="underline decoration-n-black/30 underline-offset-8">3주 후가 달라집니다</span>
+          글로벌 시장으로 나가세요
         </h2>
         <p className="text-n-black text-lg mb-10 leading-relaxed font-medium">
-          해외 바이어 <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">50개사 리스트</span>와
+          3주 후, 당신은
           <br />
-          <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">첫 수출 파이프라인</span>을 갖게 됩니다
+          <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">첫 해외 바이어</span>와 미팅하고 있을 겁니다
         </p>
 
         {/* Price Card - Compact */}

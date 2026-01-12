@@ -109,9 +109,10 @@ export default function SuccessStorySection() {
 
         {/* Result Highlight Box */}
         <div className="glass-panel-light border-primary/30 rounded-2xl px-6 py-10 text-center bg-primary/5">
-          <p className="text-white font-bold text-lg leading-relaxed">
-            GRINDA 수강생 평균<br />
-            콜드메일 응답률 <span className="text-primary text-4xl font-black mx-1 inline-block transform -translate-y-1">3배</span> 증가
+          <p className="text-white font-bold text-lg leading-relaxed mb-3">
+            <span className="text-primary text-3xl font-black block mb-2">당신의 차례입니다</span>
+            지금 신청하고<br />
+            3주 후 첫 수출 계약을 경험하세요
           </p>
         </div>
 

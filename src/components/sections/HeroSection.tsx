@@ -26,14 +26,15 @@ export default function HeroSection() {
           </span>
 
           <h1 className="text-[2.5rem] leading-[1.2] font-extrabold text-white mb-8 -tracking-[0.03em] break-keep">
-            무역 지식 제로에서 시작해도<br />
-            <span className="text-gradient-primary">AI가 자동으로 바이어 50개사</span>를 찾아주고<br />
-            <span className="text-white underline decoration-primary/60 decoration-4 underline-offset-4">3주 만에 수출 계약</span>
+            <span className="text-gradient-primary">국내 시장의 10배</span>,<br />
+            글로벌 시장이<br />
+            <span className="text-white underline decoration-primary/60 decoration-4 underline-offset-4">당신을 기다립니다</span>
           </h1>
           <p className="text-n-200 text-lg leading-[1.8] max-w-[90%] mx-auto break-keep">
-            <span className="text-white font-bold">평균 응답률 15.8%</span> (업계 평균 3%의 5배)<br />
-            <span className="text-primary font-bold">127개 기업이 검증</span>한 실전 프로그램<br />
-            검증된 템플릿으로 <span className="text-white font-semibold">바로 시작 가능</span>
+            영어 몰라도, 해외 경험 없어도<br />
+            <span className="text-white font-bold">AI와 전문가가 3주간 1:1로</span><br />
+            첫 수출까지 완벽하게 동행합니다<br />
+            <span className="text-alert font-bold text-xl mt-3 inline-block">🔥 단, 선택받은 10개 기업만</span>
           </p>
         </div>
 

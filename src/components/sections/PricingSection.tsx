@@ -90,13 +90,15 @@ export default function PricingSection() {
 
         {/* Header */}
         <div className="text-center mb-12">
-          <p className="text-alert font-bold text-lg mb-4 tracking-wide">⚡ 마감 임박</p>
+          <p className="text-alert font-bold text-lg mb-4 tracking-wide">⚡ 1기 모집 마감 임박</p>
           <h2 className="text-[1.875rem] font-extrabold text-white leading-tight mb-6">
-            지금 바로
-            <br />
-            <span className="text-primary">시작하세요</span>
+            <span className="text-alert">20.5만원</span>으로<br />
+            <span className="text-gradient-primary">글로벌 시장 진출</span>
           </h2>
-          <p className="text-n-300 text-base">1기 모집이 곧 마감됩니다</p>
+          <p className="text-n-200 text-base leading-relaxed">
+            1기는 <span className="text-white font-bold">가장 많은 혜택</span>을 받습니다<br />
+            <span className="text-primary font-semibold">단 10개 기업, 잔여 3자리</span>
+          </p>
         </div>
 
         {/* FOMO Countdown Timer */}

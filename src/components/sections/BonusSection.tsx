@@ -47,13 +47,16 @@ export default function BonusSection() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4 animate-pulse">Special Bonus</p>
+          <div className="inline-flex items-center gap-2 bg-alert/10 border border-alert/30 text-alert font-bold text-sm px-4 py-2 rounded-full mb-6">
+            🎁 1기 전용 혜택
+          </div>
           <h2 className="text-[2rem] font-extrabold text-white leading-tight mb-4">
-            프로그램 참여 시<br />
-            <span className="text-gradient-primary">무료로 받는 것들</span>
+            <span className="text-alert">20.5만원</span> 내고<br />
+            <span className="text-gradient-primary">수백만원 가치를 받아가세요</span>
           </h2>
-          <p className="text-n-300 text-base">
-            수강료 이상의 가치를 드립니다
+          <p className="text-n-200 text-base leading-relaxed">
+            1기는 <span className="text-white font-bold">테스트 베드</span>가 아닙니다.<br />
+            오히려 <span className="text-primary font-bold">가장 많은 혜택</span>을 드립니다.
           </p>
         </div>
 

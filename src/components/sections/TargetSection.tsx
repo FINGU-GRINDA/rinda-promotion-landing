@@ -1,10 +1,22 @@
 "use client";
 
 const targets = [
-  "내수 시장의 한계로 매출이 정체되신 분",
-  "수출 박람회에 수천만원 쓰고 성과가 없으신 분",
-  "해외 바이어에게 콜드메일을 보내도 답장이 없으신 분",
-  "영어를 못해서 해외 영업 직원을 채용해야 하나 고민인 분",
+  {
+    pain: "국내 시장은 포화... 더 이상 성장이 안 보여요",
+    desire: "→ 해외로 나가면 매출 10배 기회"
+  },
+  {
+    pain: "박람회에 3,000만원 썼는데 계약은 0건",
+    desire: "→ 온라인으로 바이어 50곳 발굴"
+  },
+  {
+    pain: "영어 못해서 수출은 꿈도 못 꿨어요",
+    desire: "→ AI가 번역부터 이메일 작성까지"
+  },
+  {
+    pain: "혼자서는 뭘 해야 할지 막막해요",
+    desire: "→ 전문가가 3주간 매일 옆에서 지도"
+  },
 ];
 
 export default function TargetSection() {
@@ -16,29 +28,35 @@ export default function TargetSection() {
 
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-primary font-bold text-sm tracking-widest uppercase mb-3 block">Checklist</span>
-          <h2 className="text-[1.8rem] font-extrabold text-white leading-tight mb-4">
-            혹시 이런 고민 <br />
-            <span className="text-n-300">하고 계시지 않나요?</span>
+          <span className="text-primary font-bold text-sm tracking-widest uppercase mb-3 block">Who Should Join</span>
+          <h2 className="text-[2rem] font-extrabold text-white leading-tight mb-4">
+            이런 분들을 위해<br />
+            <span className="text-gradient-primary">만들어졌습니다</span>
           </h2>
-          <p className="text-n-400 text-base">
-            하나라도 해당된다면, 이 강의가 유일한 해답입니다.
+          <p className="text-n-200 text-base">
+            하나라도 해당된다면, 지금이 기회입니다
           </p>
         </div>
 
-        {/* Targets Checklist */}
-        <div className="flex flex-col gap-8">
+        {/* Targets Cards */}
+        <div className="flex flex-col gap-6">
           {targets.map((item, index) => (
             <div
               key={index}
-              className="flex items-start gap-4 bg-dark-light/50 border border-white/5 rounded-xl p-6 hover:border-primary/30 transition-colors"
+              className="bg-dark-light/50 border border-white/5 rounded-2xl p-6 hover:border-primary/30 transition-all group"
             >
-              <div className="w-8 h-8 rounded-full bg-primary/15 flex items-center justify-center shrink-0 mt-0.5 border border-primary/30">
-                <svg className="w-5 h-5 text-primary" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7" />
+              {/* Pain Point */}
+              <div className="flex items-start gap-3 mb-3">
+                <svg className="w-6 h-6 text-alert shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
+                <p className="text-n-200 text-base leading-relaxed font-medium">{item.pain}</p>
               </div>
-              <span className="text-n-100 text-lg font-medium leading-relaxed">{item}</span>
+
+              {/* Desire/Solution */}
+              <div className="flex items-start gap-3 pl-9 border-l-2 border-primary/30 ml-3">
+                <p className="text-primary text-base leading-relaxed font-bold">{item.desire}</p>
+              </div>
             </div>
           ))}
         </div>
