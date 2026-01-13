@@ -10,17 +10,17 @@ export default function FinalCTASection() {
 
         {/* Main Copy */}
         <p className="text-n-black text-lg mb-8 font-semibold">
-          망설이는 동안, 경쟁자는 앞서갑니다
+          슈퍼 얼리버드 단 10개 기업만 가능합니다
         </p>
         <h2 className="text-[2.25rem] font-extrabold text-n-black leading-tight mb-10">
-          지금 시작하면
+          1기 창업 멤버로
           <br />
-          <span className="underline decoration-n-black/30 underline-offset-8">3주 후가 달라집니다</span>
+          <span className="underline decoration-n-black/30 underline-offset-8">평생 VIP 혜택</span> 받으세요
         </h2>
         <p className="text-n-black text-lg mb-12 leading-relaxed font-medium max-w-2xl mx-auto">
-          해외 바이어 <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">50개사 리스트</span>와
+          해외 바이어 <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">50개사 컨택</span>과
           <br />
-          <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">첫 수출 파이프라인</span>을 갖게 됩니다
+          <span className="font-extrabold underline decoration-n-black/40 underline-offset-4">평생 수수료 면제</span>까지
         </p>
 
         {/* Price Card - Compact */}
@@ -53,9 +53,9 @@ export default function FinalCTASection() {
         </div>
 
         {/* Trust Badges - Horizontal Compact */}
-        <div className="flex flex-wrap justify-center items-center gap-3 mb-10 w-full">
+        <div className="flex flex-wrap justify-center items-center gap-3 w-full" style={{ marginTop: '8px', marginBottom: '40px' }}>
           <span className="bg-n-black/10 text-n-black text-sm font-bold px-4 py-2 rounded-full border border-n-black/20 whitespace-nowrap">
-            선착순 10명
+            단 10개 기업
           </span>
           <span className="bg-n-black/10 text-n-black text-sm font-bold px-4 py-2 rounded-full border border-n-black/20 whitespace-nowrap">
             7일 환불 보장
@@ -66,7 +66,7 @@ export default function FinalCTASection() {
         </div>
 
         {/* Contact */}
-        <p className="text-n-black text-sm font-medium">
+        <p className="text-n-black text-sm font-medium" style={{ marginTop: '4px', marginBottom: '4px' }}>
           문의: help@rinda.ai
         </p>
 

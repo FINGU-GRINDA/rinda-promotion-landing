@@ -12,7 +12,7 @@ export default function SuccessStorySection() {
         <div className="text-center mb-16">
           <p className="text-primary font-bold text-sm mb-4 uppercase tracking-widest animate-pulse">Real Result</p>
           <h2 className="text-[2rem] font-extrabold text-white leading-[1.3]">
-            수강생의 성과가<br />
+            <span className="text-gradient-gold">실제 성과</span>가<br />
             <span className="text-gradient-gold">가장 확실한 증명</span>입니다
           </h2>
         </div>
@@ -58,8 +58,8 @@ export default function SuccessStorySection() {
         {/* Result Highlight Box */}
         <div className="glass-panel-light border-primary/30 rounded-2xl px-6 py-10 text-center bg-primary/5 result-highlight-box flex items-center justify-center">
           <p className="text-white font-bold text-lg leading-relaxed">
-            GRINDA 수강생 평균<br />
-            콜드메일 응답률 <span className="text-primary text-4xl font-black mx-1 inline-block transform -translate-y-1">3배</span> 증가
+            3주 완료 후<br />
+            <span className="text-primary text-4xl font-black mx-1 inline-block transform -translate-y-1">실전 수출</span> 시작 가능
           </p>
         </div>
 

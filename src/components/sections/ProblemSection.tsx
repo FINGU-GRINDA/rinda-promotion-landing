@@ -57,7 +57,15 @@ export default function ProblemSection() {
               </div>
               <div className="relative z-10 flex-1 min-w-0">
                 <h3 className="text-white text-lg font-bold my-2 leading-snug break-keep">{problem.title}</h3>
-                <p className="text-n-300 text-sm leading-relaxed">{problem.desc}</p>
+                <p className="text-n-300 text-sm leading-relaxed">
+                  {index === 2 ? (
+                    <>
+                      <span className="text-primary font-bold">실제 실행</span>은 막막하셨나요?
+                    </>
+                  ) : (
+                    problem.desc
+                  )}
+                </p>
               </div>
             </div>
           ))}

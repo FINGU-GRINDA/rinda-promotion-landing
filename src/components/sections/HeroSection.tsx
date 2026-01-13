@@ -8,8 +8,6 @@ export default function HeroSection() {
     if (el) el.scrollIntoView({ behavior: "smooth" });
   };
 
-  const deadlineDate = new Date("2025-01-31T23:59:59");
-
   return (
     <section className="min-h-screen flex flex-col justify-center pt-32 pb-20 px-5 relative overflow-hidden bg-n-black">
 
@@ -33,7 +31,7 @@ export default function HeroSection() {
           <h1 className="text-[2.5rem] leading-[1.2] font-extrabold text-white mb-8 -tracking-[0.03em] break-keep text-center">
             영어 못해도, 무역 몰라도<br />
             <span className="text-gradient-primary">3주 만에</span><br />
-            <span className="text-white underline decoration-primary/60 decoration-4 underline-offset-4">첫 수출</span> 시작합니다.
+            <span className="text-white underline decoration-primary/60 decoration-4 underline-offset-4">바이어 컨택</span> 시작합니다.
           </h1>
           <p className="text-n-200 text-lg leading-[1.8] max-w-[90%] mx-auto break-keep">
             전문가가 <span className="text-white font-semibold">1:1로 동행</span>하며<br />

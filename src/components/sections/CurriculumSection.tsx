@@ -42,7 +42,7 @@ export default function CurriculumSection() {
                 <h3 className="text-white font-bold text-lg mb-4">1:1 킥오프 컨설팅 (20분)</h3>
                 <div className="space-y-3">
                   {curriculumData.kickoff.items.map((item, i) => (
-                    <div key={i} className="flex items-center gap-3 text-n-200 text-base">
+                    <div key={i} className="flex items-center gap-3 text-n-200 text-sm">
                       <span className="text-primary w-1.5 h-1.5 rounded-full bg-current shrink-0" style={{ marginLeft: '0.5rem' }} />
                       <span className="leading-relaxed">{item}</span>
                     </div>
@@ -71,7 +71,7 @@ export default function CurriculumSection() {
 
                 <div className="space-y-3 pl-4 border-l-2 border-primary/30 curriculum-content">
                   {week.practice.slice(0, 2).map((item, i) => (
-                    <div key={i} className="flex items-start gap-3 text-n-200 text-base curriculum-list-item">
+                    <div key={i} className="flex items-start gap-3 text-n-200 text-sm curriculum-list-item">
                       <span className="text-primary font-bold shrink-0 mt-0.5">·</span>
                       <span className="leading-relaxed">{item}</span>
                     </div>
