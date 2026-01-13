@@ -81,15 +81,11 @@ src/
 
 ## 배포
 
-Vercel 배포 권장:
+
 
 ```bash
 # Vercel CLI 설치
 npm i -g vercel
-
-# 배포
-vercel
-```
 
 ## 주요 기능
 
