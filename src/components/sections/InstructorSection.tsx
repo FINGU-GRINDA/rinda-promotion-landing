@@ -22,16 +22,27 @@ export default function InstructorSection() {
         {/* Instructor Card */}
         <div className="bg-dark rounded-2xl p-8 border border-white/5">
           {/* Profile */}
-          <div className="flex items-center gap-5 mb-12">
-            <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-primary/20">
-              <span className="text-n-black text-3xl font-black">박</span>
+          <div className="flex items-center gap-5 mb-8">
+            <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-primary/20 ring-2 ring-primary/30">
+              <span className="text-white text-3xl font-black">준영</span>
             </div>
             <div>
               <h3 className="text-white font-bold text-xl mb-1">박준영</h3>
               <p className="text-primary text-base font-bold">
                 GRINDA 시니어 컨설턴트
               </p>
+              <p className="text-n-400 text-sm mt-1">
+                액셀러레이팅 프로그램 리더
+              </p>
             </div>
+          </div>
+
+          {/* Personal Message */}
+          <div className="bg-primary/10 border border-primary/20 rounded-xl p-5 mb-8">
+            <p className="text-n-200 text-base leading-relaxed italic">
+              "저도 같은 시행착오를 겪었습니다.<br />
+              그래서 여러분의 고민을 정확히 이해합니다."
+            </p>
           </div>
 
           {/* Credentials */}

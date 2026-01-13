@@ -87,7 +87,7 @@ export default function CountdownTimer({
 
     return (
       <div className="flex flex-col items-center">
-        <div className="bg-rd-n-black rounded-lg px-3 py-2 min-w-[56px]">
+        <div className="bg-n-black rounded-lg px-3 py-2 min-w-[56px]">
           <span className="text-2xl font-bold text-white tabular-nums">
             {String(value).padStart(2, "0")}
           </span>

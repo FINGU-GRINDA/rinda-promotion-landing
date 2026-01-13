@@ -18,27 +18,21 @@ export default function CurriculumSection() {
             <br />
             <span className="text-primary">수출 파이프라인</span>
           </h2>
-          <div className="inline-flex items-center gap-2 bg-white/5 px-5 py-3 rounded-full border border-white/10">
-            <span className="w-2 h-2 rounded-full bg-alert animate-pulse" />
-            <p className="text-n-200 text-base font-bold">
-              매주 금요일 19:30 Live
-            </p>
-          </div>
         </div>
 
         {/* Timeline Container */}
         <div className="relative space-y-16">
 
           {/* Timeline Line */}
-          <div className="absolute left-[18px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-primary/30 to-transparent"></div>
+          <div className="absolute left-[18px] top-8 bottom-8 w-0.5 bg-gradient-to-b from-primary via-primary/30 to-transparent z-0"></div>
 
           {/* Kickoff */}
           <div className="relative pl-0">
-            <div className="absolute left-0 top-0 w-12 h-12 flex items-center justify-center z-10">
+            <div className="absolute left-[18px] top-0 w-12 h-12 flex items-center justify-center z-10 -translate-x-1/2">
               <div className="w-4 h-4 bg-primary rounded-full ring-4 ring-n-black shadow-[0_0_15px_rgba(0,212,170,0.6)]" />
             </div>
 
-            <div className="ml-[60px] glass-panel bg-primary/10 border-primary/40 rounded-xl p-6 relative group overflow-hidden">
+            <div className="ml-[100px] glass-panel bg-primary/10 border-primary/40 rounded-xl p-6 relative group overflow-hidden z-20">
               <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity" />
 
               <div className="relative z-10">
@@ -48,8 +42,8 @@ export default function CurriculumSection() {
                 <h3 className="text-white font-bold text-lg mb-4">1:1 킥오프 컨설팅 (20분)</h3>
                 <div className="space-y-3">
                   {curriculumData.kickoff.items.map((item, i) => (
-                    <div key={i} className="flex items-start gap-3 text-n-200 text-base">
-                      <span className="text-primary mt-2 w-1.5 h-1.5 rounded-full bg-current shrink-0" />
+                    <div key={i} className="flex items-center gap-3 text-n-200 text-base">
+                      <span className="text-primary w-1.5 h-1.5 rounded-full bg-current shrink-0" style={{ marginLeft: '0.5rem' }} />
                       <span className="leading-relaxed">{item}</span>
                     </div>
                   ))}
@@ -62,22 +56,22 @@ export default function CurriculumSection() {
           {curriculumData.weeks.map((week) => (
             <div key={week.week} className="relative pl-0">
               {/* Timeline Dot */}
-              <div className="absolute left-0 top-0 w-12 h-12 flex items-center justify-center z-10">
+              <div className="absolute left-[18px] top-0 w-12 h-12 flex items-center justify-center z-10 -translate-x-1/2">
                 <div className="w-12 h-12 rounded-full bg-n-black border-2 border-primary/50 flex items-center justify-center text-primary font-bold text-sm shadow-xl">
                   {week.week}주
                 </div>
               </div>
 
-              <div className="ml-[60px] glass-panel rounded-xl p-6 hover:bg-white/5 transition-all group">
-                <div className="flex items-center justify-between mb-4">
+              <div className="ml-[120px] glass-panel rounded-xl p-6 hover:bg-white/5 transition-all group z-20">
+                <div className="flex items-center justify-between mb-4 curriculum-date">
                   <span className="text-n-300 text-sm font-bold bg-white/5 px-3 py-1.5 rounded-lg border border-white/5">{week.date}</span>
                 </div>
 
-                <h3 className="text-white font-bold text-lg mb-4 leading-snug">{week.title}</h3>
+                <h3 className="text-white font-bold text-lg mb-4 leading-snug curriculum-content">{week.title}</h3>
 
-                <div className="space-y-3 pl-4 border-l-2 border-primary/30">
+                <div className="space-y-3 pl-4 border-l-2 border-primary/30 curriculum-content">
                   {week.practice.slice(0, 2).map((item, i) => (
-                    <div key={i} className="flex items-start gap-3 text-n-200 text-base">
+                    <div key={i} className="flex items-start gap-3 text-n-200 text-base curriculum-list-item">
                       <span className="text-primary font-bold shrink-0 mt-0.5">·</span>
                       <span className="leading-relaxed">{item}</span>
                     </div>
@@ -93,12 +87,12 @@ export default function CurriculumSection() {
         </div>
 
         {/* Result */}
-        <div className="mt-20 glass-panel-light bg-primary/10 border-primary/30 rounded-2xl p-12 text-center relative overflow-hidden">
+        <div className="mt-20 glass-panel-light bg-primary/10 border-primary/30 rounded-2xl p-12 text-center relative overflow-hidden curriculum-result-box">
           <div className="absolute inset-0 bg-primary/5 animate-pulse" />
-          <p className="text-white font-bold text-xl relative z-10 leading-relaxed">
-            3주 후, 당신은 이미 <br />
-            <span className="text-primary text-2xl font-black">해외 수출 기업 대표</span>입니다.
-          </p>
+            <p className="text-white font-bold text-xl relative z-10 leading-relaxed curriculum-final-text">
+              3주 후, 당신은 이미 <br />
+              <span className="text-primary text-2xl font-black">해외 수출 기업 대표</span>입니다.
+            </p>
         </div>
 
       </div>

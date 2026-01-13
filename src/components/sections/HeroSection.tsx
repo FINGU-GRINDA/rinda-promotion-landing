@@ -21,11 +21,16 @@ export default function HeroSection() {
         {/* Main Title: The Hook */}
         <div className="mb-16 animate-slide-up opacity-0 mt-8" style={{ animationDelay: '0.2s' }}>
           {/* Accelerating Badge */}
-          <span className="bg-primary/20 text-primary font-bold text-sm px-4 py-2 rounded-full inline-block mb-6 border border-primary/30">
-            3주 집중 수출 액셀러레이팅
-          </span>
+          <div className="flex justify-center" style={{ marginBottom: '0.75rem' }}>
+            <span 
+              className="bg-primary/20 text-primary font-bold text-xs rounded-lg border border-primary/30 block w-fit"
+              style={{ padding: '0.25rem 1rem' }}
+            >
+              3주 집중 수출 액셀러레이팅
+            </span>
+          </div>
 
-          <h1 className="text-[2.5rem] leading-[1.2] font-extrabold text-white mb-8 -tracking-[0.03em] break-keep">
+          <h1 className="text-[2.5rem] leading-[1.2] font-extrabold text-white mb-8 -tracking-[0.03em] break-keep text-center">
             영어 못해도, 무역 몰라도<br />
             <span className="text-gradient-primary">3주 만에</span><br />
             <span className="text-white underline decoration-primary/60 decoration-4 underline-offset-4">첫 수출</span> 시작합니다.
@@ -41,7 +46,8 @@ export default function HeroSection() {
         <div className="w-full animate-slide-up opacity-0 relative z-20 mb-12" style={{ animationDelay: '0.4s' }}>
           <button
             onClick={scrollToApply}
-            className="w-full bg-primary active:bg-primary-dark active:scale-[0.98] text-n-black font-bold text-lg py-4 rounded-xl transition-all shadow-[0_0_30px_rgba(0,212,170,0.4)] mb-5 relative overflow-hidden group"
+            className="w-full bg-primary active:bg-primary-dark active:scale-[0.98] text-n-black font-bold text-lg py-4 rounded-xl transition-all shadow-[0_0_30px_rgba(0,212,170,0.4)] relative overflow-hidden group"
+            style={{ marginBottom: '10px' }}
           >
             <span className="relative z-10 flex items-center justify-center gap-2">
               지금 바로 신청하기
@@ -49,7 +55,7 @@ export default function HeroSection() {
             </span>
           </button>
 
-          <div className="flex items-center justify-center gap-2 text-n-400 text-sm">
+          <div className="flex items-center justify-center gap-2 text-n-400 text-sm" style={{ marginBottom: '10px' }}>
             <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
             </svg>
@@ -59,7 +65,7 @@ export default function HeroSection() {
 
         {/* Social Proof: Text Only for Cleanliness */}
         <div className="w-full glass-panel p-6 rounded-2xl animate-fade-in opacity-0" style={{ animationDelay: '0.6s' }}>
-          <p className="text-n-200 text-base mb-4 leading-relaxed">
+          <p className="text-n-200 text-base mb-4 leading-relaxed text-center">
             <span className="text-primary font-bold">"</span>
             수출 초보였던 저도 3주 만에<br />
             <span className="text-white font-bold">싱가포르 백화점 입점 계약</span>했습니다!

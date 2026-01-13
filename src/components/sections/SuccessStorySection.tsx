@@ -18,26 +18,16 @@ export default function SuccessStorySection() {
         </div>
 
         {/* Case Study Card - Highlighted */}
-        <div className="glass-panel border-primary/30 rounded-2xl p-8 mb-12 relative overflow-hidden group shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]">
+        <div className="glass-panel border-primary/30 rounded-2xl relative overflow-hidden group shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] success-story-card">
           <div className="absolute top-0 right-0 bg-primary text-n-black text-xs font-black px-4 py-1.5 rounded-bl-xl shadow-lg z-10 tracking-wide">
             VERIFIED
           </div>
 
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-50" />
+          <div className="absolute top-0 left-0 right-0 bottom-[2rem] bg-gradient-to-br from-primary/5 to-transparent opacity-50" />
 
-          {/* Profile */}
-          <div className="flex items-center gap-5 mb-12 relative z-10">
-            <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-dark rounded-full flex items-center justify-center shrink-0 shadow-lg shadow-primary/20 ring-4 ring-white/5">
-              <span className="text-n-black text-2xl font-black">익</span>
-            </div>
-            <div>
-              <p className="text-white font-bold text-xl mb-1">김민성 대표님</p>
-              <p className="text-n-300 text-sm font-medium">익투스 (기능성 침구)</p>
-            </div>
-          </div>
 
           {/* Quote */}
-          <blockquote className="relative z-10 mb-12">
+          <blockquote className="relative z-10 mb-6">
             <p className="text-white text-[1.5rem] leading-[1.4] font-bold break-keep">
               "수출 초보였는데,<br />
               <span className="relative inline-block text-primary">
@@ -51,15 +41,22 @@ export default function SuccessStorySection() {
             </p>
           </blockquote>
 
+          {/* Profile */}
+          <div className="text-center mb-2 relative z-10">
+            <p className="text-n-300 font-bold text-sm" style={{ textAlign: 'center' }}>
+              김민성 대표님 - 익투스 (기능성 침구)
+            </p>
+          </div>
+          
           {/* Tags */}
-          <div className="flex flex-wrap gap-2 text-sm font-bold relative z-10">
-            <span className="bg-white/10 text-n-200 px-4 py-2 rounded-lg border border-white/10 backdrop-blur-sm">3주 수강</span>
-            <span className="bg-primary/20 text-primary px-4 py-2 rounded-lg border border-primary/20 backdrop-blur-sm">첫 수출 성공</span>
+          <div className="flex flex-wrap gap-2 text-sm font-bold relative z-10 justify-center success-tags">
+            <span className="bg-white/10 text-n-200 rounded-lg border border-white/10 backdrop-blur-sm" style={{ padding: '0.25rem 0.75rem' }}>3주 수강</span>
+            <span className="bg-primary/20 text-primary rounded-lg border border-primary/20 backdrop-blur-sm" style={{ padding: '0.25rem 0.75rem' }}>첫 수출 성공</span>
           </div>
         </div>
 
         {/* Result Highlight Box */}
-        <div className="glass-panel-light border-primary/30 rounded-2xl px-6 py-10 text-center bg-primary/5 mt-12">
+        <div className="glass-panel-light border-primary/30 rounded-2xl px-6 py-10 text-center bg-primary/5 result-highlight-box flex items-center justify-center">
           <p className="text-white font-bold text-lg leading-relaxed">
             GRINDA 수강생 평균<br />
             콜드메일 응답률 <span className="text-primary text-4xl font-black mx-1 inline-block transform -translate-y-1">3배</span> 증가

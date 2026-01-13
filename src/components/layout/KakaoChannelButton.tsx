@@ -16,10 +16,10 @@ export default function KakaoChannelButton({
           href={channelUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="absolute bottom-28 right-5 w-14 h-14 rounded-full bg-[#fae100] shadow-lg flex items-center justify-center transition-transform hover:scale-110 hover:shadow-xl pointer-events-auto"
+          className="absolute bottom-28 right-5 w-12 h-12 rounded-full bg-primary shadow-lg flex items-center justify-center transition-transform hover:scale-110 hover:shadow-xl pointer-events-auto"
           aria-label="카카오톡 상담"
         >
-          <MessageCircle className="w-7 h-7 text-[#371d1e]" />
+          <MessageCircle className="w-5 h-5 text-n-black" />
         </a>
       </div>
     </div>

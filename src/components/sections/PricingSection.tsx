@@ -117,14 +117,12 @@ export default function PricingSection() {
                 1기 얼리버드 특별가
               </span>
             </div>
-            <div className="mb-2">
-              <span className="text-n-black/50 line-through text-lg">300,000원</span>
-            </div>
-            <div className="flex items-center justify-center gap-3">
-              <p className="text-n-black text-4xl font-black">205,000원</p>
-              <span className="bg-alert text-white text-xs font-bold px-2.5 py-1 rounded-lg">
-                32%
-              </span>
+            <div className="flex flex-col items-center justify-center gap-1 w-full">
+              <span className="text-n-black/80 line-through text-base text-center">300,000원</span>
+              <div className="flex items-center justify-center gap-2 w-full">
+                <span className="text-n-black font-black text-3xl">205,000원</span>
+                <span className="bg-n-black text-white text-xs font-bold px-2 py-1 rounded shrink-0">32%</span>
+              </div>
             </div>
           </div>
 
@@ -132,11 +130,22 @@ export default function PricingSection() {
           <div className="p-7">
 
             {/* Urgency */}
-            <div className="bg-alert/15 border border-alert/30 rounded-2xl p-5 mb-7 flex items-center gap-4">
-              <span className="w-4 h-4 bg-alert rounded-full pulse-dot shrink-0" />
-              <div>
-                <p className="text-alert font-bold text-lg">잔여 3자리</p>
-                <p className="text-n-400 text-base">선착순 10명 중 7명 신청 완료</p>
+            <div className="bg-alert/15 border border-alert/30 rounded-2xl p-5 mb-7">
+              <div className="flex items-center gap-4 mb-4">
+                <span className="w-4 h-4 bg-alert rounded-full pulse-dot shrink-0" />
+                <div>
+                  <p className="text-alert font-bold text-lg">잔여 3자리</p>
+                  <p className="text-n-400 text-base">선착순 10명 중 7명 신청 완료</p>
+                </div>
+              </div>
+              {/* Progress Gauge Bar */}
+              <div className="w-full bg-n-black/50 rounded-full h-4 overflow-hidden">
+                <div 
+                  className="bg-gradient-to-r from-alert to-alert/80 h-full rounded-full transition-all duration-500 flex items-center justify-end pr-2"
+                  style={{ width: '70%' }}
+                >
+                  <span className="text-white text-xs font-bold">7/10</span>
+                </div>
               </div>
             </div>
 

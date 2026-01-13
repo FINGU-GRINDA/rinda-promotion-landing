@@ -3,8 +3,8 @@
 /* ===== GRINDA 수출자동화 - UX 최적화 디자인 시스템 ===== */
 @theme {
   /* Primary - 민트/청록 */
-  --color-primary: #00D4AA;
-  --color-primary-dark: #00B894;
+  --color-primary: #1AFFD4;
+  --color-primary-dark: #00E5B8;
   --color-primary-light: #E8FFF9;
 
   /* Secondary - 네이비/다크 */
@@ -70,7 +70,8 @@ h6 {
 }
 
 p {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+  text-align: center;
   /* Default paragraph spacing */
   color: #DEE2E6;
   /* Slightly softer white for body text (n-300) */
@@ -94,6 +95,28 @@ p {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 4px 24px -1px rgba(0, 0, 0, 0.2);
+  padding: 2rem !important;
+}
+
+.glass-panel p {
+  text-align: left;
+  margin-bottom: 0;
+}
+
+.glass-panel .text-center p {
+  text-align: center !important;
+}
+
+.glass-panel blockquote p {
+  text-align: center;
+}
+
+.glass-panel h3 {
+  margin-bottom: 0;
+}
+
+.success-tags {
+  margin-top: 0.75rem !important;
 }
 
 .glass-panel-light {
@@ -101,6 +124,107 @@ p {
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Centered Content Box ===== */
+.centered-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.centered-box p {
+  text-align: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* ===== Solution Section Styles ===== */
+.solution-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 2rem !important;
+}
+
+.solution-content {
+  margin-top: 0.25rem;
+}
+
+.solution-title {
+  margin-top: 0.5rem;
+}
+
+.solution-panel {
+  padding: 1.25rem !important;
+}
+
+.result-stats {
+  line-height: 2.2 !important;
+  margin-top: 0.75rem !important;
+}
+
+.success-story-card {
+  margin-bottom: 0 !important;
+}
+
+.result-highlight-box {
+  margin-top: 2rem !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-highlight-box p {
+  margin: 0;
+}
+
+/* ===== Curriculum Section Styles ===== */
+.curriculum-date,
+.curriculum-content {
+  margin-left: 1.5rem !important;
+}
+
+.curriculum-list-item {
+  margin-left: 0.25rem !important;
+}
+
+.curriculum-final-text {
+  margin-top: 0.75rem !important;
+}
+
+.curriculum-result-box {
+  margin-top: 1.5rem !important;
+}
+
+/* ===== Problem Section Styles ===== */
+.problem-grid > div {
+  min-height: auto;
+}
+
+.solution-bonus {
+  margin-top: 2rem !important;
+}
+
+.solution-bonus-header {
+  margin-top: 0.5rem !important;
+}
+
+.solution-header {
+  margin-top: 5rem !important;
+}
+
+/* ===== Problem Section Styles ===== */
+.problem-grid {
+  gap: 16px !important;
+}
+
+.problem-intro {
+  margin-top: 2rem !important;
 }
 
 .text-gradient {

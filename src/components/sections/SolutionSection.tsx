@@ -34,7 +34,7 @@ export default function SolutionSection() {
 
         {/* Transition Header */}
         <div className="text-center mb-20">
-          <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4 animate-pulse">The Solution</p>
+          <p className="text-primary font-bold text-sm tracking-widest uppercase mb-4 animate-pulse solution-header">The Solution</p>
           <h2 className="text-[2rem] font-extrabold text-white leading-[1.3] -tracking-[0.03em] mb-6">
             하지만 <span className="text-primary">린다(Rinda)</span>와<br />
             함께라면 다릅니다.
@@ -46,24 +46,40 @@ export default function SolutionSection() {
         </div>
 
         {/* Benefits Steps */}
-        <div className="space-y-4 mb-24">
+        <div className="mb-24 solution-steps">
           {benefits.map((item) => (
             <div
               key={item.number}
-              className="glass-panel rounded-xl p-5 hover:bg-white/5 transition-all group relative overflow-hidden"
+              className="glass-panel rounded-xl hover:bg-white/5 transition-all group relative overflow-hidden solution-panel"
             >
               {/* Highlight Effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute top-[1rem] left-[1rem] right-[1rem] bottom-[1rem] bg-gradient-to-r from-primary/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-              <div className="relative z-10 flex items-start gap-4">
+              <div className="relative z-10 flex items-center gap-4">
                 {/* Number Badge */}
                 <div className="w-10 h-10 rounded-full bg-primary flex items-center justify-center shrink-0">
                   <span className="text-n-black text-base font-bold">{item.number}</span>
                 </div>
 
                 {/* Content */}
-                <div className="flex-1 pt-1">
-                  <h3 className="text-white font-bold text-lg mb-1.5">{item.title}</h3>
+                <div className="flex-1 solution-content">
+                  <h3 className="text-white font-bold text-lg mb-1.5 solution-title leading-tight">
+                    {item.number === 1 ? (
+                      <>
+                        <span className="bg-primary/30 text-primary px-1.5 py-0.5 rounded font-extrabold text-base">AI</span> 타겟 시장 분석
+                      </>
+                    ) : item.number === 2 ? (
+                      <>
+                        진성 바이어 <span className="bg-primary/30 text-primary px-1.5 py-0.5 rounded font-extrabold text-base">50개사</span>
+                      </>
+                    ) : item.number === 3 ? (
+                      <>
+                        검증된 <span className="bg-primary/30 text-primary px-1.5 py-0.5 rounded font-extrabold text-base">콜드메일</span>
+                      </>
+                    ) : (
+                      item.title
+                    )}
+                  </h3>
                   <p className="text-n-300 text-base leading-relaxed break-keep">{item.desc}</p>
                 </div>
               </div>
@@ -72,9 +88,9 @@ export default function SolutionSection() {
         </div>
 
         {/* Bonus Box - Using primary gradient instead of accent */}
-        <div className="bg-gradient-to-r from-primary to-primary-dark backdrop-blur-md rounded-2xl p-8 text-center transform shadow-[0_0_30px_rgba(0,212,170,0.3)] border border-white/20 relative overflow-hidden">
+        <div className="bg-gradient-to-r from-primary to-primary-dark backdrop-blur-md rounded-2xl p-8 text-center transform shadow-[0_0_30px_rgba(0,212,170,0.3)] border border-white/20 relative overflow-hidden solution-bonus">
           <div className="absolute inset-0 bg-white/20 animate-pulse pointer-events-none" />
-          <p className="text-n-black/80 font-bold text-sm mb-3 uppercase tracking-wide relative z-10">Special Bonus</p>
+          <p className="text-n-black/80 font-bold text-sm mb-3 uppercase tracking-wide relative z-10 solution-bonus-header">Special Bonus</p>
           <p className="text-n-black font-extrabold text-2xl relative z-10 leading-tight">
             30만원 상당 <br />
             Global Launch Kit 무료 제공

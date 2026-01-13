@@ -39,7 +39,7 @@ export default function FAQSection() {
                   <span className="font-bold leading-relaxed">{faq.question}</span>
                 </span>
               </AccordionTrigger>
-              <AccordionContent className="px-5 pb-5 pt-0 text-n-300 text-base leading-[1.8] pl-14">
+              <AccordionContent className="pb-5 pt-0 text-n-300 text-base leading-[1.8]" style={{ paddingLeft: '64px', paddingRight: '20px' }}>
                 {faq.answer}
               </AccordionContent>
             </AccordionItem>
@@ -51,8 +51,8 @@ export default function FAQSection() {
           <p className="text-n-400 text-lg mb-3">
             더 궁금한 점이 있으신가요?
           </p>
-          <a href="mailto:help@rinda.ai" className="text-primary font-bold text-xl hover:underline">
-            help@rinda.ai
+          <a href="https://rinda.ai/contact" className="text-primary font-bold text-xl hover:underline">
+            문의하기
           </a>
         </div>
 
