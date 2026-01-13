@@ -44,7 +44,7 @@ export default function ProblemSection() {
           {problems.map((problem, index) => (
             <div
               key={index}
-              className="bg-dark/80 border border-alert/20 p-6 rounded-xl flex items-start gap-4 hover:bg-dark transition-colors relative overflow-hidden group shadow-lg"
+              className="bg-dark/80 border border-alert/20 p-6 rounded-xl flex items-center gap-4 hover:bg-dark transition-colors relative overflow-hidden group shadow-lg"
             >
               <div className="absolute right-0 top-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
                 <svg className="w-16 h-16 text-alert" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -52,11 +52,11 @@ export default function ProblemSection() {
                 </svg>
               </div>
 
-              <div className="w-10 h-10 rounded-full bg-alert/20 flex items-center justify-center shrink-0 border border-alert/30 text-alert font-bold text-base shadow-[0_0_10px_rgba(255,71,87,0.2)]" style={{ marginTop: '0.25rem' }}>
+              <div className="w-10 h-10 rounded-full bg-alert/20 flex items-center justify-center shrink-0 border border-alert/30 text-alert font-bold text-base shadow-[0_0_10px_rgba(255,71,87,0.2)]">
                 {index + 1}
               </div>
               <div className="relative z-10 flex-1 min-w-0">
-                <h3 className="text-white text-lg font-bold mb-2 leading-snug break-keep">{problem.title}</h3>
+                <h3 className="text-white text-lg font-bold my-2 leading-snug break-keep">{problem.title}</h3>
                 <p className="text-n-300 text-sm leading-relaxed">{problem.desc}</p>
               </div>
             </div>
